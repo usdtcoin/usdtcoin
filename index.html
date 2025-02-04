@@ -53,7 +53,7 @@
                         <img src="images/icon1.png" alt="Twitter" class="w-10 h-10 icon-patriot object-contain">
                     </a>
 
-                    <a href="https://gofundmeme.io/campaigns/DeLrUDFHNb3UZn6HZPdbC3MEo79GbkfNrtPJ67RzP8dK" target="_blank" class="transition-all hover:scale-125 flex items-center justify-center">
+                    <a href="https://gofundmeme.io/campaigns/" target="_blank" class="transition-all hover:scale-125 flex items-center justify-center">
                         <img src="images/icon3.png" alt="gofundmeme.io" class="w-12 h-12 icon-patriot object-contain">
                     </a>
                 </div>
@@ -101,12 +101,8 @@
                         <div class="text-red-700 font-bold">Presalers</div>
                     </div>
                     <div class="bg-[#b59410] p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
-                        <div class="text-3xl font-black text-white">25%</div>
-                        <div class="text-white font-bold">Locked</div>
-                    </div>
-                    <div class="bg-blue-800 p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
-                        <div class="text-3xl font-black text-white">25%</div>
-                        <div class="text-white font-bold">Airdrop for Patriots</div>
+                        <div class="text-3xl font-black text-white">50%</div>
+                        <div class="text-white font-bold">Locked & Airdrop</div>
                     </div>
                 </div>
             </div>
@@ -153,14 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
     new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Liquidity Pools', 'Presalers', 'Locked', 'Airdrop for Patriots'],
+            labels: ['Liquidity Pools', 'Presalers', 'Locked & Airdrop'],
             datasets: [{
-                data: [25, 25, 25, 25],
+                data: [25, 25, 50],
                 backgroundColor: [
                     '#b91c1c', // deep red for Liquidity Pools
                     '#ffffff', // white for Presalers
-                    '#b59410', // gold/brass for Locked
-                    '#1e3a8a', // deep blue for Airdrop
+                    '#1e3a8a', // deep blue for Locked & Airdrop
                 ],
                 borderWidth: 2,
                 borderColor: '#000000'
