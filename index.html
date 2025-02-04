@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$USDT - AMERICAN FREEDOM</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.359.0/umd/lucide.min.js"></script>
+    <style>
+        .icon-patriot {
+            filter: brightness(0) saturate(100%) invert(14%) sepia(96%) saturate(6307%) hue-rotate(358deg) brightness(97%) contrast(115%);
+        }
+        .usa-stripes {
+            background: repeating-linear-gradient(
+                45deg,
+                #e11d48,
+                #e11d48 10px,
+                #ffffff 10px,
+                #ffffff 20px
+            );
+        }
+        @keyframes pulse-freedom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .freedom-pulse {
+            animation: pulse-freedom 2s infinite;
+        }
+        .text-shadow-patriot {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .bg-flag {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath fill='%23ffffff' d='M25,2 L28,15 L41,15 L30,23 L34,36 L25,28 L16,36 L20,23 L9,15 L22,15 Z'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#041e42]"> <!-- Navy blue background -->
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#041e42] shadow-lg border-b-4 border-red-700">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <img src="images/logo.png" alt="Logo" class="h-12 w-auto">
+                    <span class="text-2xl font-black text-white tracking-wider">$USDT</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="https://x.com/_USDTrump" target="_blank" class="transition-all hover:scale-125 flex items-center justify-center">
+                        <img src="images/icon1.png" alt="Twitter" class="w-10 h-10 icon-patriot object-contain">
+                    </a>
+                    <a href="https://t.me/+zY4TDXfF6GU4MjMx" target="_blank" class="transition-all hover:scale-125 flex items-center justify-center">
+                        <img src="images/icon2.png" alt="Telegram" class="w-10 h-10 icon-patriot object-contain">
+                    </a>
+                    <a href="https://gofundmeme.io" target="_blank" class="transition-all hover:scale-125 flex items-center justify-center">
+                        <img src="images/icon3.png" alt="gofundmeme.io" class="w-12 h-12 icon-patriot object-contain">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-flag">
+        <div class="container mx-auto px-4 py-20">
+            <div class="relative">
+                <div class="w-full h-[600px] rounded-lg overflow-hidden">
+                    <img src="images/banner.png" alt="Hero" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute inset-0 rounded-lg flex items-center justify-center">
+                    <div class="text-center">
+                        <h1 class="text-5xl md:text-7xl font-black mb-6 text-white text-shadow-patriot freedom-pulse uppercase">
+                            THE AMERICAN WAY
+                        </h1>
+                        <p class="text-2xl text-red-500 mb-8 font-bold text-shadow-patriot uppercase tracking-wider">
+                            🦅 Freedom - Liberty - Prosperity 🦅
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Token Distribution -->
+    <section class="py-20 usa-stripes" id="token">
+        <div class="container mx-auto px-4">
+            <div class="bg-[#041e42] p-8 rounded-2xl shadow-2xl">
+                <h2 class="text-4xl font-black text-center mb-16 text-white uppercase tracking-wider">Tokenomics</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <canvas id="tokenChart"></canvas>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 mt-8">
+                        <div class="bg-red-700 p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
+                            <div class="text-3xl font-black text-white">25%</div>
+                            <div class="text-white font-bold">Liquidity Pool</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
+                            <div class="text-3xl font-black text-red-700">25%</div>
+                            <div class="text-red-700 font-bold">Presalers</div>
+                        </div>
+                        <div class="bg-blue-800 p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
+                            <div class="text-3xl font-black text-white">50%</div>
+                            <div class="text-white font-bold">LIBERTY FUND</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy -->
+    <section class="py-20 bg-[#041e42]" id="how">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-black text-center mb-16 text-white uppercase tracking-wider">Secure Your Freedom</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-red-700 p-8 rounded-xl shadow-2xl hover:shadow-2xl transition-transform hover:scale-105">
+                    <div class="text-white text-5xl mb-4 font-black">01</div>
+                    <h3 class="text-2xl font-black mb-4 text-white uppercase">Connect Wallet</h3>
+                    <p class="text-white font-bold">Connect your crypto wallet on gofundmeme.io</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-2xl hover:shadow-2xl transition-transform hover:scale-105">
+                    <div class="text-red-700 text-5xl mb-4 font-black">02</div>
+                    <h3 class="text-2xl font-black mb-4 text-red-700 uppercase">Select Amount</h3>
+                    <p class="text-gray-800 font-bold">Check newly launched for $USDT</p>
+                </div>
+                <div class="bg-blue-800 p-8 rounded-xl shadow-2xl hover:shadow-2xl transition-transform hover:scale-105">
+                    <div class="text-white text-5xl mb-4 font-black">03</div>
+                    <h3 class="text-2xl font-black mb-4 text-white uppercase">Buy Freedom</h3>
+                    <p class="text-white font-bold">Choose your $USDT amount and confirm transaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="mb-4 text-xl font-black">🦅 MADE IN THE USA WITH FREEDOM 🦅</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('tokenChart');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['WE THE PEOPLE', 'PATRIOTS', 'LIBERTY FUND'],
+                datasets: [{
+                    data: [25, 25, 50],
+                    backgroundColor: [
+                        '#b91c1c', // deep red
+                        '#ffffff', // white
+                        '#1e3a8a', // deep blue
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#000000'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            },
+                            color: '#000000'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.label}: ${context.raw}%`;
+                            }
+                        }
+                    }
+                },
+                layout: {
+                    padding: 20
+                },
+                cutout: '60%'
+            }
+        });
+    });
+    </script>
+</body>
+</html>
