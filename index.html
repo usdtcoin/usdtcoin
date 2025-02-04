@@ -102,9 +102,13 @@
                             <div class="text-3xl font-black text-red-700">25%</div>
                             <div class="text-red-700 font-bold">Presalers</div>
                         </div>
+                        <div class="bg-white p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
+                            <div class="text-3xl font-black text-red-700">25%</div>
+                            <div class="text-red-700 font-bold">Locked</div>
+                        </div>
                         <div class="bg-blue-800 p-6 rounded-lg shadow-xl text-center transform hover:scale-105 transition-transform">
-                            <div class="text-3xl font-black text-white">50%</div>
-                            <div class="text-white font-bold">LIBERTY FUND</div>
+                            <div class="text-3xl font-black text-white">25%</div>
+                            <div class="text-white font-bold">Airdrop for Patriots</div>
                         </div>
                     </div>
                 </div>
@@ -151,9 +155,9 @@
         new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['WE THE PEOPLE', 'PATRIOTS', 'LIBERTY FUND'],
+                labels: ['Liquidity Pools', 'Presalers', 'Locked', 'Airdrop for Patriots'],
                 datasets: [{
-                    data: [25, 25, 50],
+                    data: [25, 25, 25, 25],
                     backgroundColor: [
                         '#b91c1c', // deep red
                         '#ffffff', // white
